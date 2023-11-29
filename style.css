@@ -208,8 +208,9 @@ figcaption {
   width: 5rem;
   height: 5rem;
   position: relative;
-  margin: 0.5rem 0 0.5rem auto;
-  left: 2.5rem;
+  margin: 0.5rem;
+  margin-left: -3.5rem; /* #search-results padding-left + width / 2 */
+  left: 50vw;
   border: 1rem solid var(--border-color);
   border-top-color: var(--accent);
   border-radius: 50%;
