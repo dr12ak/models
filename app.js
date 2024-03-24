@@ -26,7 +26,7 @@ function addCard(item) {
   const card = document.createElement("article");
   card.classList.add("image-card");
   let innerHTML = `<div class="maintain-aspect-ratio"><div class="images hidden" onclick="showDetails(this, event);" >`;
-  item.modelVersions.sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt));
+  item.modelVersions.sort((a, b) => new Date(a.publishedAt) - new Date(b.publishedAt));
   item.modelVersions.forEach((version, index) => {
     if (index === 0) innerHTML += `<figure class="selected">`;
     else innerHTML += `<figure>`;
